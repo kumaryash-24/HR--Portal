@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company HR Portal</title>
+    <link rel="icon" href="images.gif">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #CEEFF2;
+        }
+        header,footer{
+            background-color: #30676c;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+            display: inline;
+            padding: 12px;
+        }
+        .navitem a {
+            text-decoration: none; /* This will remove line from employee registration conmtact us and all*/
+            color: aliceblue;
+        }
+        .registerform{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .employeetable{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid #30676c; 
+            padding: 8px;
+
+        }
+        .contactus{
+             text-align: center;
+            
+        }
+    </style> 
+
+</head>
+
+<body>
+    <header>
+    
+    <h1 style="text-align: center;"> Welcome To Company HR Portal</h1>
+    <nav>
+        <ul>
+            <li class="navitem"><a href="#Employee-registration"> Employee Registration</a></li>
+            <li class="navitem"><a href="#Employee-directory"> Employee directory</a></li>
+            <li class="navitem"><a href="#Contact-us"> Contact Us</a></li>
+        </ul>
+    </nav>
+    </header>
+    <center>
+    <img src="images1.png"  alt="" height="400px" width="400px" >
+    </center>   
+    
+    <section id="Employee-registration" class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register as a <em>employee</em></p>
+        <form>
+            <label for="Name">Name</label>
+            <input type="text" id="Name"><br><br>
+            <label for="email">Email id</label>
+            <input type="email" id="email" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password"><br><br>
+            <label for="age">Age</label>
+            <input type="number" id="age"><br><br>
+            <label for="role">Select Role</label>
+            <select>
+                <option>Software Engineer</option>
+                <option>Product Manager</option>
+                <option>HR</option>
+                <option>Designer </option>
+            </select> <br><br>
+            <label for="joining date"> Select Joining Date</label>
+            <input type="date" id="joining date"><br><br>
+            <input type="checkbox" id="terms">
+            <label for="terms">I am agreed to terms and condition</label><br><br>
+            <input type="submit">
+
+        </form>
+    </section>
+
+    <section id="Employee-directory" class="employeetable">
+        <h2>Employee Directory</h2>
+        <p>List of all registered employees</p>
+        <table>
+            <tr>
+                <td>Employee ID </td>
+                <td>Employee Name</td>
+                <td>Employee Role</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>yash</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>678</td>
+                <td>Abhishek</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>989</td>
+                <td>akash</td>
+                <td>Product manager</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <section id="Contact-us" class="contactus">
+        <h2>Contact Us</h2>
+        <p>You can contact us at offocial@yash.com or Visit us between 9AM-6PM.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.906717424281!2d85.4110557751024!3d23.355393878941868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e2e6dd02d0c3%3A0x424622fc2c794a9f!2sSarala%20Birla%20Public%20School!5e0!3m2!1sen!2sin!4v1707152484015!5m2!1sen!2sin"
+            width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+</section>
+<footer>
+    <p>&copy;Yash 2024</p>
+</footer>
+
+
+</body>
+
+</html>
